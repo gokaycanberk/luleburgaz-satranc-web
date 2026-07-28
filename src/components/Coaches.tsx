@@ -8,7 +8,7 @@ const TONES = ["#DDD5C0", "#C9BFA5", "#D6CCB6", "#CFC4A8"];
 
 export default function Coaches() {
   return (
-    <section id="egitmenler" className="py-24 bg-paper-2 mt-16">
+    <section id="egitmenler" className="py-16 md:py-20 bg-paper-2">
       <div className="container-lg">
         <SectionHead
           num="03"

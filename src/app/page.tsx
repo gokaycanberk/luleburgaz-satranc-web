@@ -2,6 +2,7 @@ import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import StatsBar from "@/components/StatsBar";
 import About from "@/components/About";
+import ImageBand from "@/components/ImageBand";
 import Programs from "@/components/Programs";
 import Coaches from "@/components/Coaches";
 import ProgressChart from "@/components/ProgressChart";
@@ -21,6 +22,15 @@ export default function HomePage() {
         <Hero />
         <StatsBar />
         <About />
+
+        {/* Tek tam sayfa derslik geçişi */}
+        <ImageBand
+          src="/derslik.jpeg"
+          alt="Lüleburgaz Satranç derslik salonu"
+          caption="Derslik · turnuva salonu"
+          objectPosition="center"
+        />
+
         <Programs />
         <Coaches />
         <ProgressChart />
@@ -28,6 +38,14 @@ export default function HomePage() {
         <Testimonials />
         <Blog />
         <FAQ />
+
+        <ImageBand
+          src="/bina2.jpeg"
+          alt="Lüleburgaz Satranç Spor Kulübü dış görünüm"
+          caption="Merkez · Lüleburgaz"
+          objectPosition="center 70%"
+        />
+
         <Contact />
       </main>
       <Footer />

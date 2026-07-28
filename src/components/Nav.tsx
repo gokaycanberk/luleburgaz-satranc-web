@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { NAV_LINKS, SCHOOL } from "@/lib/data";
+import BrandMark from "./BrandMark";
 import clsx from "clsx";
 
 export default function Nav() {
@@ -22,31 +23,64 @@ export default function Nav() {
           : "bg-transparent border-b border-transparent"
       )}
     >
-      <div className="container-lg flex items-center justify-between py-4">
-        <a href="#top" className="flex items-center gap-3">
-          <span className="font-serif italic text-[32px] leading-[0.9] text-ink">L</span>
-          <span className="text-[24px] leading-[0.9] text-bordo">♞</span>
-          <div className="ml-1.5 leading-tight hidden sm:block">
-            <div className="text-[13px] font-semibold -tracking-[0.01em]">{SCHOOL.shortName}</div>
-            <div className="text-[10px] font-mono text-ink-3 tracking-[0.12em] uppercase">
-              Satranç Spor Okulu
+      {/* Minimal vertical pad so crest can read larger */}
+      <div className="container-lg flex items-center justify-between gap-4 py-1.5 md:py-2">
+        <a href="#top" className="flex items-center gap-2.5 min-w-0 -my-0.5">
+          <BrandMark
+            size={50}
+            priority
+            bordered={false}
+            className={clsx(
+              "md:!h-[54px] md:!w-[54px] shadow-[0_6px_18px_-8px_rgba(0,0,0,0.4)]",
+              scrolled ? "ring-1 ring-line-soft" : "ring-1 ring-paper/25"
+            )}
+          />
+          <div className="leading-[1.15] hidden sm:block min-w-0">
+            <div
+              className={clsx(
+                "font-mono text-[14px] md:text-[15px] tracking-[0.02em] uppercase truncate transition-colors",
+                scrolled ? "text-ink" : "text-paper"
+              )}
+            >
+              {SCHOOL.shortName}
+            </div>
+            <div
+              className={clsx(
+                "font-mono text-[12px] md:text-[13px] tracking-[0.04em] uppercase transition-colors",
+                scrolled ? "text-ink-3" : "text-paper/65"
+              )}
+            >
+              Satranç Spor Kulübü
             </div>
           </div>
         </a>
 
-        <div className="hidden lg:flex gap-8 items-center">
+        <div className="hidden lg:flex gap-7 xl:gap-8 items-center">
           {NAV_LINKS.map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className="text-[13px] font-medium text-ink-2 hover:text-bordo transition-colors"
+              className={clsx(
+                "text-[15px] font-medium transition-colors",
+                scrolled
+                  ? "text-ink-2 hover:text-bordo"
+                  : "text-paper/85 hover:text-paper"
+              )}
             >
               {l.label}
             </a>
           ))}
         </div>
 
-        <a href="#iletisim" className="btn btn-primary px-4 py-2.5 text-[13px]">
+        <a
+          href="#iletisim"
+          className={clsx(
+            "btn px-4 py-2.5 text-[15px] shrink-0",
+            scrolled
+              ? "btn-primary"
+              : "bg-paper text-ink hover:bg-bordo hover:text-paper"
+          )}
+        >
           <span className="hidden sm:inline">Ücretsiz Deneme Dersi</span>
           <span className="sm:hidden">Deneme</span>
           <span className="arrow-hover">→</span>

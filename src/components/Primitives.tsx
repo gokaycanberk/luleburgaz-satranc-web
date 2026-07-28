@@ -32,7 +32,7 @@ export function SectionHead({
     <div
       ref={ref}
       className={clsx(
-        "fade-in mb-14",
+        "fade-in mb-10",
         align === "center" && "max-w-[720px] mx-auto text-center"
       )}
     >
@@ -43,7 +43,7 @@ export function SectionHead({
       {subtitle && (
         <p
           className={clsx(
-            "mt-5 text-lg leading-[1.55] text-ink-2 max-w-[640px]",
+            "mt-5 text-[22px] leading-[1.55] text-ink-2 max-w-[640px]",
             align === "center" && "mx-auto"
           )}
         >

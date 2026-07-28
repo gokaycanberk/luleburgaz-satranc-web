@@ -14,7 +14,7 @@ function formatDateTr(iso: string): string {
   });
 }
 
-function getBlogItems(limit = 6): ContentItem[] {
+function getBlogItems(limit = 9): ContentItem[] {
   return getAllContent()
     .filter((item) => BLOG_TYPES.includes(item.contentType))
     .sort(
@@ -24,18 +24,11 @@ function getBlogItems(limit = 6): ContentItem[] {
     .slice(0, limit);
 }
 
-/** Announcements & text-heavy posts → contain; photo stories → cover. */
-function blogMediaMode(item: ContentItem): "contain" | "cover" {
-  if (item.contentType === "announcement") return "contain";
-  if (item.video) return "contain";
-  return "cover";
-}
-
 export default function Blog() {
-  const posts = getBlogItems(6);
+  const posts = getBlogItems(9);
 
   return (
-    <section id="blog" className="py-32 md:py-36">
+    <section id="blog" className="py-16 md:py-20">
       <div className="container-lg">
         <SectionHead
           num="07"
@@ -59,8 +52,6 @@ export default function Blog() {
 }
 
 function BlogCard({ post }: { post: ContentItem }) {
-  const mode = blogMediaMode(post);
-
   return (
     <Link href={`/blog/${post.slug}`} className="group flex flex-col h-full min-w-0">
       <div
@@ -68,27 +59,13 @@ function BlogCard({ post }: { post: ContentItem }) {
         style={{ aspectRatio: "4 / 3", minHeight: 220 }}
       >
         {post.coverImage ? (
-          mode === "contain" ? (
-            <div className="absolute inset-0 p-3">
-              <div className="relative h-full w-full overflow-hidden">
-                <Image
-                  src={post.coverImage}
-                  alt={post.title}
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  className="object-contain object-center transition-transform duration-500 group-hover:scale-[1.02]"
-                />
-              </div>
-            </div>
-          ) : (
-            <Image
-              src={post.coverImage}
-              alt={post.title}
-              fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-              className="object-cover object-center transition-transform duration-500 group-hover:scale-[1.04]"
-            />
-          )
+          <Image
+            src={post.coverImage}
+            alt={post.title}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            className="object-cover object-[center_28%] scale-[1.15] transition-transform duration-500 group-hover:scale-[1.2]"
+          />
         ) : (
           <div
             className="absolute inset-0 opacity-40"
@@ -107,7 +84,7 @@ function BlogCard({ post }: { post: ContentItem }) {
       <h3 className="font-serif text-[24px] md:text-[26px] leading-[1.15] mb-3 -tracking-[0.01em] text-ink transition-colors group-hover:text-bordo line-clamp-3">
         {post.title}
       </h3>
-      <p className="text-sm leading-[1.55] text-ink-2 mb-5 line-clamp-3 flex-1">
+      <p className="text-[18px] leading-[1.55] text-ink-2 mb-5 line-clamp-3 flex-1">
         {post.summary}
       </p>
       <div className="mt-auto flex justify-between pt-4 border-t border-line-soft font-mono text-[11px] text-ink-3 tracking-[0.05em]">

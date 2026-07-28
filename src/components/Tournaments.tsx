@@ -128,17 +128,17 @@ export default function Tournaments() {
   const tournaments = getTournamentItems(6).map(enrichTournament);
 
   return (
-    <section id="turnuvalar" className="py-32 md:py-36">
+    <section id="turnuvalar" className="py-16 md:py-20">
       <div className="container-lg">
         <SectionHead
           num="05"
-          eyebrow="Yaklaşan Turnuvalar"
+          eyebrow="Turnuvalar"
           title={
             <>
-              Sahaya <em className="italic font-serif">çık.</em>
+              Sahada <em className="italic font-serif">yaşananlar.</em>
             </>
           }
-          subtitle="Öğrencilerimizin yıl boyunca katıldığı seçili turnuva takvimi. TSF resmi puanlı organizasyonlar."
+          subtitle="Yaklaşan organizasyonlar ve geçmiş turnuva sonuçları — öğrencilerimizin katıldığı TSF puanlı müsabakalar burada."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6">
@@ -149,7 +149,7 @@ export default function Tournaments() {
 
         <div className="mt-10 text-right">
           <a href="#turnuvalar" className="btn btn-ghost">
-            Tüm turnuva takvimi <span className="arrow-hover">→</span>
+            Tüm turnuvalar <span className="arrow-hover">→</span>
           </a>
         </div>
       </div>

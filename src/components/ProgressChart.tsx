@@ -3,6 +3,7 @@
 import { useReveal } from "@/lib/useReveal";
 import { PROGRESS_DATA } from "@/lib/data";
 import { Eyebrow } from "./Primitives";
+import SectionBackdrop from "./SectionBackdrop";
 
 export default function ProgressChart() {
   const ref = useReveal<HTMLDivElement>();
@@ -18,8 +19,9 @@ export default function ProgressChart() {
   const areaPath = path + ` L ${xScale(xMax)} ${h - padB} L ${xScale(0)} ${h - padB} Z`;
 
   return (
-    <section className="py-24 bg-paper-2">
-      <div className="container-lg">
+    <section className="relative py-16 md:py-20 bg-paper-2 overflow-hidden">
+      <SectionBackdrop src="/c4.jpg" strength={0.16} position="center" />
+      <div className="container-lg relative z-[1]">
         <div
           ref={ref}
           className="fade-in grid grid-cols-1 md:grid-cols-[1fr_1.4fr] gap-16 lg:gap-20 items-center"

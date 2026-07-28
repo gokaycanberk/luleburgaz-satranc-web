@@ -23,7 +23,7 @@ const PROGRAM_IMAGES: ProgramMedia[] = [
 
 export default function Programs() {
   return (
-    <section id="programlar" className="py-24">
+    <section id="programlar" className="py-16 md:py-20">
       <div className="container-lg">
         <SectionHead
           num="02"

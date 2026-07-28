@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { SCHOOL } from "@/lib/data";
 import { Eyebrow } from "./Primitives";
+import SectionBackdrop from "./SectionBackdrop";
+import BrandMark from "./BrandMark";
 
 type Level = "baslangic" | "temel" | "orta" | "ileri";
 type ProgramChoice = "bireysel" | "grup" | "online" | "yaz";
@@ -55,15 +57,17 @@ export default function Contact() {
     "font-mono text-[10px] tracking-[0.14em] text-ink-3 uppercase block mb-1";
 
   return (
-    <section id="iletisim" className="py-32 md:py-36 bg-paper-2">
-      <div className="container-lg">
+    <section id="iletisim" className="relative py-16 md:py-20 bg-paper-2 overflow-hidden">
+      <SectionBackdrop src="/class.jpg" strength={0.18} position="center" />
+      <div className="container-lg relative z-[1]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-24">
           <div>
+            <BrandMark size={72} className="mb-6" />
             <Eyebrow num="09">İletişim</Eyebrow>
             <h2 className="font-serif text-[44px] md:text-[64px] lg:text-[84px] leading-none tracking-tightestish mt-5">
               İlk hamle <em className="italic font-serif text-bordo">senin.</em>
             </h2>
-            <p className="text-lg leading-[1.55] text-ink-2 mt-6 max-w-[440px]">
+            <p className="text-[22px] leading-[1.55] text-ink-2 mt-6 max-w-[440px]">
               Ücretsiz deneme dersi için formu doldur. 24 saat içinde arayıp uygun bir zaman belirleyelim.
             </p>
 

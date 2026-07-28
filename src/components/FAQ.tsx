@@ -3,13 +3,15 @@
 import { useState } from "react";
 import { FAQ_ITEMS } from "@/lib/data";
 import { SectionHead } from "./Primitives";
+import SectionBackdrop from "./SectionBackdrop";
 
 export default function FAQ() {
   const [open, setOpen] = useState<number>(0);
 
   return (
-    <section id="sss" className="py-24">
-      <div className="container-narrow">
+    <section id="sss" className="relative py-16 md:py-20 overflow-hidden">
+      <SectionBackdrop src="/c3.jpg" strength={0.2} position="center" />
+      <div className="container-narrow relative z-[1]">
         <SectionHead
           num="08"
           eyebrow="Sıkça Sorulan Sorular"
@@ -46,7 +48,7 @@ export default function FAQ() {
                 className="overflow-hidden transition-all duration-400 ease-in-out"
                 style={{ maxHeight: open === i ? 320 : 0 }}
               >
-                <p className="text-base leading-[1.65] text-ink-2 pb-7 max-w-[720px]">
+                <p className="text-[20px] leading-[1.65] text-ink-2 pb-7 max-w-[720px]">
                   {item.a}
                 </p>
               </div>

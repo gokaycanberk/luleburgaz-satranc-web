@@ -1,10 +1,17 @@
 import { TESTIMONIALS } from "@/lib/data";
+import SectionBackdrop from "./SectionBackdrop";
 
 export default function Testimonials() {
   return (
-    <section className="py-24 bg-ink text-paper">
-      <div className="container-lg">
-        <div className="mb-16">
+    <section className="relative py-16 md:py-20 bg-ink text-paper overflow-hidden">
+      <SectionBackdrop
+        src="/chess-banner.jpeg"
+        strength={0.35}
+        position="center"
+        tone="ink"
+      />
+      <div className="container-lg relative z-[1]">
+        <div className="mb-10">
           <div className="eyebrow" style={{ color: "#D9BF8F" }}>
             <span
               className="eyebrow-dot"
