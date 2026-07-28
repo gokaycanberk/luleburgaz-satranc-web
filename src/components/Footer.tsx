@@ -41,7 +41,7 @@ export default function Footer() {
               {SCHOOL.name}
             </div>
             <p className="text-sm leading-[1.65] text-ink-4 max-w-[380px]">
-              Trakya&apos;nın en eski satranç okulu. 2014&apos;ten bu yana çocuk ve gençlerin
+              2022&apos;den bu yana Lüleburgaz ve Kırklareli&apos;de çocuk ve gençlerin
               stratejik düşünce yolculuğunda.
             </p>
           </div>

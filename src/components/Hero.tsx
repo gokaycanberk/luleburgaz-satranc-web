@@ -15,7 +15,7 @@ export default function Hero() {
 
       <div className="container-lg relative z-10">
         <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mb-14">
-          <Eyebrow num="00">Kırklareli · Lüleburgaz · Kuruluş 2014</Eyebrow>
+          <Eyebrow num="00">Kırklareli · Lüleburgaz · Kuruluş 2022</Eyebrow>
           <div className="font-mono text-[11px] text-ink-4 tracking-[0.15em]">
             TSF LİSANSLI EĞİTİM KURUMU
           </div>
@@ -29,7 +29,7 @@ export default function Hero() {
 
         <div className="grid grid-cols-1 md:grid-cols-[1.4fr_1fr] gap-8 md:gap-20 items-end mb-20 max-w-[1200px]">
           <p className="text-xl leading-[1.5] text-ink-2 max-w-[560px]">
-            Trakya&apos;nın en eski satranç okulu. On iki yıldır 6–18 yaş arası çocuk ve gençleri
+            Lüleburgaz ve Kırklareli&apos;de 6–18 yaş arası çocuk ve gençleri
             ulusal turnuva sahnesine hazırlıyor, FIDE reyting sürecini adım adım yönetiyoruz.
           </p>
 

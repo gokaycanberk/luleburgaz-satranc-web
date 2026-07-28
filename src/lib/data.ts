@@ -3,7 +3,7 @@
 export const SCHOOL = {
   name: "Lüleburgaz Satranç Spor Okulu",
   shortName: "Lüleburgaz",
-  founded: 2014,
+  founded: 2022,
   cities: ["Kırklareli", "Lüleburgaz"],
   address: "Yıldırım Mah. 34. Sk. No: 12/A, Lüleburgaz, Kırklareli",
   phone: "+90 288 417 00 00",
@@ -12,7 +12,7 @@ export const SCHOOL = {
 };
 
 export const STATS = [
-  { num: "2014", label: "Kuruluş Yılı" },
+  { num: "2022", label: "Kuruluş Yılı" },
   { num: "640+", label: "Mezun Öğrenci" },
   { num: "48", label: "FIDE Dereceli Sporcu" },
   { num: "17", label: "Türkiye Şampiyonluğu" },

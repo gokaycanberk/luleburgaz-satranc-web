@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   ),
   title: "Lüleburgaz Satranç Spor Okulu — Zihinsel disiplin, stratejik düşünce",
   description:
-    "Trakya'nın en eski satranç okulu. Kırklareli ve Lüleburgaz'da 6–18 yaş çocuk ve gençlere bireysel, grup ve online satranç dersleri. FIDE ratingli turnuva hazırlığı.",
+    "Lüleburgaz Satranç Spor Okulu. Kırklareli ve Lüleburgaz'da 6–18 yaş çocuk ve gençlere bireysel, grup ve online satranç dersleri. FIDE ratingli turnuva hazırlığı.",
   keywords: [
     "Lüleburgaz satranç",
     "Kırklareli satranç",

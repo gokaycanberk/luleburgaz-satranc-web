@@ -22,7 +22,7 @@ export default function About() {
 
           <div>
             <p className="text-xl leading-[1.55] mb-8">
-              Lüleburgaz Satranç Spor Okulu, 2014 yılında bir avuç tutkulu antrenörün
+              Lüleburgaz Satranç Spor Okulu, 2022 yılında bir avuç tutkulu antrenörün
               &quot;Trakya&apos;da rekabetçi satranç eğitimi verecek bir çatı&quot; fikriyle kuruldu.
               Bugün Kırklareli ve Lüleburgaz&apos;da iki merkezimizde 220&apos;nin üzerinde aktif
               öğrenciye ders veriyoruz.
