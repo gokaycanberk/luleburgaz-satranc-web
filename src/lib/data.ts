@@ -5,9 +5,10 @@ export const SCHOOL = {
   shortName: "Lüleburgaz",
   founded: 2022,
   cities: ["Kırklareli", "Lüleburgaz"],
-  address: "Yıldırım Mah. 34. Sk. No: 12/A, Lüleburgaz, Kırklareli",
-  phone: "+90 288 417 00 00",
-  whatsapp: "905000000000",
+  address: "Zafer Mahallesi, Emel Caddesi No:120, Lüleburgaz / Kırklareli 39750",
+  phone: "0 539 473 14 32",
+  phoneTel: "+905394731432",
+  whatsapp: "905394731432",
   email: "merhaba@luleburgazsatranc.com",
 };
 
@@ -15,14 +16,12 @@ export const STATS = [
   { num: "2022", label: "Kuruluş Yılı" },
   { num: "640+", label: "Mezun Öğrenci" },
   { num: "48", label: "FIDE Dereceli Sporcu" },
-  { num: "17", label: "Türkiye Şampiyonluğu" },
+  { num: "3", label: "Antrenör" },
 ];
 
 export type Program = {
   num: string;
   title: string;
-  duration: string;
-  freq: string;
   body: string;
   level: string;
 };
@@ -31,48 +30,36 @@ export const PROGRAMS: Program[] = [
   {
     num: "01",
     title: "Bireysel Özel Ders",
-    duration: "60 dk",
-    freq: "Haftada 1–2",
     body: "Reyting hedefli, kişiye özel açılış repertuvarı ve zayıf yön analizi. Her ders sonrası PGN dosyası ve ödev.",
     level: "Tüm seviyeler",
   },
   {
     num: "02",
     title: "Grup Dersleri",
-    duration: "90 dk",
-    freq: "Haftada 1",
     body: "4–8 kişilik seviye grupları. Ortak açılış çalışması, blitz turnuvaları ve grup analizleri ile rekabetçi ortam.",
     level: "Başlangıç – İleri",
   },
   {
     num: "03",
     title: "Online Dersler",
-    duration: "45–60 dk",
-    freq: "Esnek",
     body: "Lichess ve Chess.com üzerinden canlı ders. Ekran paylaşımı, analiz odası ve kayıt hakkı dahil.",
     level: "Tüm seviyeler",
   },
   {
     num: "04",
     title: "Turnuva Hazırlık Kampı",
-    duration: "3–5 gün",
-    freq: "Turnuva öncesi",
     body: "Rakip analizi, açılış hazırlığı, oyun temposu ve turnuva psikolojisi üzerine yoğun program. Simülasyonlu maçlar.",
     level: "Orta – İleri",
   },
   {
     num: "05",
     title: "Analiz & Koçluk",
-    duration: "90 dk",
-    freq: "Aylık paket",
     body: "Kendi oyunlarınızın motor destekli derin analizi. Kritik pozisyonlar üzerinden hesaplama antrenmanı.",
     level: "Orta – İleri",
   },
   {
     num: "06",
     title: "Yaz & Kış Okulu",
-    duration: "Yarım gün",
-    freq: "Sömestr / yaz",
     body: "Tatil dönemlerinde iki haftalık yoğun program. Sabah teorik ders, öğleden sonra turnuva pratiği.",
     level: "8–16 yaş",
   },
@@ -81,8 +68,6 @@ export const PROGRAMS: Program[] = [
 export type Coach = {
   name: string;
   role: string;
-  fide: "GM" | "IM" | "FM" | "CM" | "WGM" | "WIM" | "WFM";
-  rating: number;
   bio: string;
   years: number;
 };
@@ -90,35 +75,21 @@ export type Coach = {
 export const COACHES: Coach[] = [
   {
     name: "Berkan Hacıoğlu",
-    role: "Kurucu · Başantrenör",
-    fide: "FM",
-    rating: 2314,
-    bio: "İstanbul Üniversitesi mezunu. TSF 1. kademe antrenör lisansı. Bölgesel şampiyonalar ve kulüp organizasyonlarında aktif antrenör.",
-    years: 16,
+    role: "Kurucu Başkan · Antrenör",
+    bio: "Kulübün kurucu başkanı. Orta Doğu Teknik Üniversitesi Makina Mühendisliği mezunu. Yaklaşık 25 yıldır satranç eğitimi ve kulüp organizasyonuyla uğraşıyor.",
+    years: 25,
   },
   {
     name: "Özgür Kantar",
-    role: "Kurucu · Antrenör",
-    fide: "CM",
-    rating: 2198,
-    bio: "Kulüp kurucu ortağı. Çocuk ve genç gruplarında seviye gelişimi, turnuva hazırlığı.",
-    years: 20,
+    role: "Kurucu Ortak · Antrenör",
+    bio: "Kulübün kurucu ortağı. Varna Teknik Üniversitesi Elektronik Otomasyon Mühendisliği mezunu. 35 yıllık deneyimiyle özellikle çocuk ve genç gruplarında çalışıyor.",
+    years: 35,
   },
   {
-    name: "Mert Aksoy",
-    role: "Antrenör · Analiz",
-    fide: "CM",
-    rating: 2087,
-    bio: "Trakya Üniversitesi bilgisayar mühendisi. Motor destekli analiz ve açılış hazırlığı sorumlusu.",
-    years: 5,
-  },
-  {
-    name: "Zeynep Kaya",
-    role: "Genç Sporcu Koçu",
-    fide: "FM",
-    rating: 2245,
-    bio: "Balkan Genç Şampiyonu 2018. FIDE Trainer sertifikalı. Turnuva psikolojisi ve zaman yönetimi.",
-    years: 6,
+    name: "Berin Hacıoğlu",
+    role: "Antrenör",
+    bio: "Lüleburgazlı kimya mühendisi. Yaklaşık 25 yıldır satrançla iç içe; derslerde temelden turnuva hazırlığına kadar öğrencilerle birebir ilgileniyor.",
+    years: 25,
   },
 ];
 
@@ -146,22 +117,19 @@ export type Testimonial = {
 
 export const TESTIMONIALS: Testimonial[] = [
   {
-    quote:
-      "Oğlum iki yıldır burada. Sadece satranç değil, konsantrasyon ve sabır öğreniyor. Antrenörlerin her öğrenciyi ayrı ayrı takip etmesi bizim için çok değerli.",
+    quote: "Oğlum düzenli geliyor. Dersler sakin, takip net. Biz de memnunuz.",
     author: "Ayşe Y.",
-    role: "Öğrenci velisi · Berk (10 yaş)",
+    role: "Öğrenci velisi",
   },
   {
-    quote:
-      "İlk turnuvamda çok gergindim ama Zeynep hocanın hazırlığı sayesinde odaklanabildim. Bir yılda 400 reyting kazandım.",
+    quote: "İlk turnuvama buradan hazırlandım. Ortam tanıdık, rahat hissettim.",
     author: "Ege D.",
-    role: "Öğrenci · 11 yaş · 1620 ELO",
+    role: "Öğrenci",
   },
   {
-    quote:
-      "Kızım şimdi bölge şampiyonalarına katılıyor. Küçük şehirde bu kalitede bir eğitim almak beklemediğimiz bir fırsattı.",
+    quote: "Kızım hem öğreniyor hem arkadaş ediniyor. İletişim kurması kolay.",
     author: "Mehmet K.",
-    role: "Öğrenci velisi · Nisa (13 yaş)",
+    role: "Öğrenci velisi",
   },
 ];
 
@@ -241,12 +209,12 @@ export const FAQ_ITEMS = [
 ];
 
 export const NAV_LINKS = [
-  { label: "Hakkımızda", href: "#hakkimizda" },
-  { label: "Programlar", href: "#programlar" },
-  { label: "Eğitmenler", href: "#egitmenler" },
-  { label: "Turnuvalar", href: "#turnuvalar" },
-  { label: "Blog", href: "#blog" },
-  { label: "İletişim", href: "#iletisim" },
+  { label: "Hakkımızda", href: "/#hakkimizda" },
+  { label: "Programlar", href: "/#programlar" },
+  { label: "Eğitmenler", href: "/#egitmenler" },
+  { label: "Turnuvalar", href: "/#turnuvalar" },
+  { label: "Blog", href: "/#blog" },
+  { label: "İletişim", href: "/#iletisim" },
 ];
 
 // Progress chart data — Ege D. rating growth

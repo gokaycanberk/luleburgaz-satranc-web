@@ -25,7 +25,7 @@ export default function Nav() {
     >
       {/* Minimal vertical pad so crest can read larger */}
       <div className="container-lg flex items-center justify-between gap-4 py-1.5 md:py-2">
-        <a href="#top" className="flex items-center gap-2.5 min-w-0 -my-0.5">
+        <a href="/#top" className="flex items-center gap-2.5 min-w-0 -my-0.5">
           <BrandMark
             size={50}
             priority
@@ -73,7 +73,7 @@ export default function Nav() {
         </div>
 
         <a
-          href="#iletisim"
+          href="/#iletisim"
           className={clsx(
             "btn px-4 py-2.5 text-[15px] shrink-0",
             scrolled

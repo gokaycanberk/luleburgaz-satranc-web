@@ -12,7 +12,6 @@ import Blog from "@/components/Blog";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 export default function HomePage() {
   return (
@@ -23,7 +22,6 @@ export default function HomePage() {
         <StatsBar />
         <About />
 
-        {/* Tek tam sayfa derslik geçişi */}
         <ImageBand
           src="/derslik.jpeg"
           alt="Lüleburgaz Satranç derslik salonu"
@@ -49,7 +47,6 @@ export default function HomePage() {
         <Contact />
       </main>
       <Footer />
-      <WhatsAppFloat />
     </>
   );
 }

@@ -70,13 +70,13 @@ export default function Hero() {
             </p>
             <div className="flex flex-wrap gap-3 md:justify-end">
               <a
-                href="#programlar"
+                href="/#programlar"
                 className="btn bg-paper text-ink hover:bg-bordo hover:text-paper"
               >
                 Programları incele <span className="arrow-hover">→</span>
               </a>
               <a
-                href="#iletisim"
+                href="/#iletisim"
                 className="btn bg-transparent text-paper border border-paper/40 hover:border-paper"
               >
                 Ücretsiz deneme

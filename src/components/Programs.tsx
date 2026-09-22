@@ -57,7 +57,7 @@ function ProgramCard({
   program: Program;
   media: ProgramMedia;
 }) {
-  const { num, title, duration, freq, body, level } = program;
+  const { num, title, body, level } = program;
   const [hover, setHover] = useState(false);
   const isPoster = media.mode === "contain";
 
@@ -68,7 +68,6 @@ function ProgramCard({
       className="group flex flex-col min-w-0 border border-line-soft transition-colors cursor-pointer overflow-hidden"
       style={{ background: hover ? "#EBE6D8" : "#F5F2EA" }}
     >
-      {/* Compact media band — fixed height, no oversized min-height */}
       <div
         className={`relative w-full overflow-hidden border-b border-line-soft h-[190px] md:h-[210px] lg:h-[220px] ${
           isPoster ? "bg-paper-2" : "bg-paper-3"
@@ -108,17 +107,7 @@ function ProgramCard({
           {body}
         </p>
 
-        <div className="flex items-end justify-between gap-4 pt-3 border-t border-line-soft">
-          <div className="flex gap-6 font-mono text-[11px] text-ink-3">
-            <div>
-              <div className="text-ink-4 text-[9px] tracking-[0.14em] mb-0.5">SÜRE</div>
-              <div>{duration}</div>
-            </div>
-            <div>
-              <div className="text-ink-4 text-[9px] tracking-[0.14em] mb-0.5">SIKLIK</div>
-              <div>{freq}</div>
-            </div>
-          </div>
+        <div className="flex items-end justify-end pt-3 border-t border-line-soft">
           <div
             className="text-sm text-bordo transition-all duration-200 shrink-0"
             style={{
