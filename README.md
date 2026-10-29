@@ -39,6 +39,13 @@ open http://localhost:3000
 | `npm run start` | Production server |
 | `npm run lint` | ESLint kontrolü |
 | `npm run typecheck` | TypeScript tip kontrolü |
+| `npm run test` | Satranç görev senaryoları (`src/lib/chess`) |
+
+## Satranç bölümü
+
+Görevler `src/lib/chess/scenarios.ts` içindeki `SCENARIOS` dizisinde. Yeni pozisyon eklemek bu diziye bir nesne eklemek ve `evaluate.test.ts` içindeki beklenen hamle listesini güncellemektir. Doğrulama kuralı `evaluate.ts` içindedir; tek bir “doğru hamle” yoktur.
+
+Antrenöre karşı oyun `src/lib/chess/engine.ts` içindeki `pickMove` ile çalışır. Arama, “Antrenörle oyna” sekmesi açılınca yüklenen bir Web Worker’da yapılır.
 
 ## Proje Yapısı
 

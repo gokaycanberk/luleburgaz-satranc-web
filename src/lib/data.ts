@@ -13,9 +13,9 @@ export const SCHOOL = {
 };
 
 export const STATS = [
-  { num: "2022", label: "Kuruluş Yılı" },
-  { num: "640+", label: "Mezun Öğrenci" },
-  { num: "48", label: "FIDE Dereceli Sporcu" },
+  { num: "250+", label: "Öğrenci" },
+  { num: "127", label: "Lisanslı Sporcu" },
+  { num: "15", label: "FIDE Dereceli Sporcu" },
   { num: "3", label: "Antrenör" },
 ];
 

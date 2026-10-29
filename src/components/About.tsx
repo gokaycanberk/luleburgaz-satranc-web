@@ -22,8 +22,8 @@ export default function About() {
             <p className="text-[22px] leading-[1.55] mb-8">
               Lüleburgaz Satranç Spor Okulu, 2022 yılında bir avuç tutkulu antrenörün
               &quot;Trakya&apos;da rekabetçi satranç eğitimi verecek bir çatı&quot; fikriyle
-              kuruldu. Bugün Kırklareli ve Lüleburgaz&apos;da iki merkezimizde 220&apos;nin
-              üzerinde aktif öğrenciye ders veriyoruz.
+              kuruldu. Bugün 250&apos;nin üzerinde öğrenciye ders veriyoruz; 127 lisanslı
+              sporcumuz var, 15&apos;i FIDE dereceli.
             </p>
 
             <p className="text-[20px] leading-[1.65] mb-6 text-ink-2">
@@ -35,9 +35,8 @@ export default function About() {
             </p>
 
             <p className="text-[20px] leading-[1.65] mb-10 text-ink-2">
-              Kadromuzda FIDE Ustası (FM) düzeyinde iki eğitmen ve Türkiye Satranç
-              Federasyonu 1. kademe antrenörleri bulunuyor. Her öğrenci için bireysel
-              gelişim planı hazırlanır; ilerleyiş üç ayda bir raporlanır.
+              Kadromuzda üç antrenör var. Her öğrenci için bireysel gelişim planı
+              hazırlanır; ilerleyiş üç ayda bir raporlanır.
             </p>
 
             <div className="pt-10 border-t border-line-soft">

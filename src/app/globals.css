@@ -92,6 +92,11 @@ a:hover .arrow-hover {
   opacity: 1;
   transform: translateY(0);
 }
+@keyframes wiggle {
+  0%, 100% { rotate: 0deg; }
+  25% { rotate: -8deg; }
+  75% { rotate: 8deg; }
+}
 @media (prefers-reduced-motion: reduce) {
   .fade-in {
     opacity: 1;

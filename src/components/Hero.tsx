@@ -1,5 +1,5 @@
 import Image from "next/image";
-import PuzzleBoard from "./PuzzleBoard";
+import ChessSection from "./chess/ChessSection";
 import BrandMark from "./BrandMark";
 
 export default function Hero() {
@@ -86,20 +86,18 @@ export default function Hero() {
         </div>
       </section>
 
-      <section className="py-16 md:py-20 bg-paper">
+      <section id="bir-hamle" className="py-16 md:py-20 bg-paper">
         <div className="container-lg">
           <div className="mb-10 max-w-[640px]">
             <div className="eyebrow mb-4">
               <span className="eyebrow-dot" />
-              Canlı taktik
+              Kısa bir bakış
             </div>
             <h2 className="font-serif text-[36px] md:text-[48px] leading-[1.05] tracking-tighterish">
-              Tahtada <em className="italic font-serif">düşün.</em>
+              Bir hamle <em className="italic font-serif">yeter.</em>
             </h2>
           </div>
-          <div className="relative bg-paper-2 border border-line-soft overflow-hidden">
-            <PuzzleBoard />
-          </div>
+          <ChessSection />
         </div>
       </section>
     </>
