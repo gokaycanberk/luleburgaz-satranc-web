@@ -38,7 +38,7 @@ export default function Nav() {
           <div className="leading-[1.15] hidden sm:block min-w-0">
             <div
               className={clsx(
-                "font-mono text-[14px] md:text-[15px] tracking-[0.02em] uppercase truncate transition-colors",
+                "font-mono text-[16px] md:text-[18px] tracking-[0.02em] uppercase truncate transition-colors",
                 scrolled ? "text-ink" : "text-paper"
               )}
             >
@@ -46,8 +46,8 @@ export default function Nav() {
             </div>
             <div
               className={clsx(
-                "font-mono text-[12px] md:text-[13px] tracking-[0.04em] uppercase transition-colors",
-                scrolled ? "text-ink-3" : "text-paper/65"
+                "font-mono text-[13px] md:text-[15px] tracking-[0.04em] uppercase transition-colors",
+                scrolled ? "text-ink-2" : "text-paper/90"
               )}
             >
               Satranç Spor Kulübü
@@ -61,7 +61,7 @@ export default function Nav() {
               key={l.href}
               href={l.href}
               className={clsx(
-                "text-[15px] font-medium transition-colors",
+                "text-[19px] font-medium transition-colors",
                 scrolled
                   ? "text-ink-2 hover:text-bordo"
                   : "text-paper/85 hover:text-paper"
@@ -72,19 +72,6 @@ export default function Nav() {
           ))}
         </div>
 
-        <a
-          href="/#iletisim"
-          className={clsx(
-            "btn px-4 py-2.5 text-[15px] shrink-0",
-            scrolled
-              ? "btn-primary"
-              : "bg-paper text-ink hover:bg-bordo hover:text-paper"
-          )}
-        >
-          <span className="hidden sm:inline">Ücretsiz Deneme Dersi</span>
-          <span className="sm:hidden">Deneme</span>
-          <span className="arrow-hover">→</span>
-        </a>
       </div>
     </nav>
   );

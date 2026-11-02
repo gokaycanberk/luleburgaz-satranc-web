@@ -8,18 +8,26 @@ const instrumentSerif = Instrument_Serif({
   subsets: ["latin", "latin-ext"],
   variable: "--font-instrument-serif",
   display: "swap",
+  preload: true,
+  adjustFontFallback: true,
 });
 
 const sansFont = DM_Sans({
   subsets: ["latin", "latin-ext"],
+  weight: ["400", "500", "700"],
   variable: "--font-dm-sans",
   display: "swap",
+  preload: true,
+  adjustFontFallback: true,
 });
 
 const monoFont = JetBrains_Mono({
   subsets: ["latin", "latin-ext"],
+  weight: ["400", "500"],
   variable: "--font-mono",
   display: "swap",
+  preload: true,
+  adjustFontFallback: true,
 });
 
 export const metadata: Metadata = {
@@ -57,8 +65,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="tr" className={`${instrumentSerif.variable} ${sansFont.variable} ${monoFont.variable}`}>
-      <body>{children}</body>
+    <html
+      lang="tr"
+      className={`${instrumentSerif.variable} ${sansFont.variable} ${monoFont.variable}`}
+    >
+      <body className={`${sansFont.className} antialiased`}>{children}</body>
     </html>
   );
 }

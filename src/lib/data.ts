@@ -13,9 +13,8 @@ export const SCHOOL = {
 };
 
 export const STATS = [
-  { num: "250+", label: "Öğrenci" },
+  { num: "150+", label: "Öğrenci" },
   { num: "127", label: "Lisanslı Sporcu" },
-  { num: "15", label: "FIDE Dereceli Sporcu" },
   { num: "3", label: "Antrenör" },
 ];
 
@@ -30,7 +29,7 @@ export const PROGRAMS: Program[] = [
   {
     num: "01",
     title: "Bireysel Özel Ders",
-    body: "Reyting hedefli, kişiye özel açılış repertuvarı ve zayıf yön analizi. Her ders sonrası PGN dosyası ve ödev.",
+    body: "Kişiye özel açılış, oyun ortası ve oyun sonu çalışmaları. Her ders sonrası ödev.",
     level: "Tüm seviyeler",
   },
   {
@@ -42,7 +41,7 @@ export const PROGRAMS: Program[] = [
   {
     num: "03",
     title: "Online Dersler",
-    body: "Lichess ve Chess.com üzerinden canlı ders. Ekran paylaşımı, analiz odası ve kayıt hakkı dahil.",
+    body: "Kendi sistemimiz üzerinden canlı ders. Ekran paylaşımı, analiz ve kayıt genel olarak dahildir.",
     level: "Tüm seviyeler",
   },
   {
@@ -180,7 +179,7 @@ export const BLOG_POSTS: BlogPost[] = [
 export const FAQ_ITEMS = [
   {
     q: "Kaç yaşındaki çocuklar başlayabilir?",
-    a: "Genellikle 6 yaşında başlıyoruz. Bu yaşta oyunun temel kurallarını öğrenmek ve odaklanma süresini geliştirmek için uygundur. Daha küçük yaşta motivasyonu yüksek çocuklar için de bireysel değerlendirme yapıyoruz.",
+    a: "Genellikle 5–6 yaşında başlıyoruz. Bu yaşta oyunun temel kurallarını öğrenmek ve odaklanma süresini geliştirmek için uygundur. Daha küçük yaşta motivasyonu yüksek çocuklar için de bireysel değerlendirme yapıyoruz.",
   },
   {
     q: "Hiç satranç bilmeyen bir çocuk için uygun mudur?",
@@ -191,16 +190,8 @@ export const FAQ_ITEMS = [
     a: "İlk ücretsiz görüşmede öğrencinin seviyesi ve hedefleri belirlenir. Buna göre haftalık ders sayısı, bireysel/grup dengesi ve turnuva takvimi planlanır. Program üç ayda bir gözden geçirilir.",
   },
   {
-    q: "FIDE reyting turnuvasına ne zaman girebilirim?",
-    a: "Türkiye Satranç Federasyonu tarafından belirlenen kurallara göre, resmi bir kulüp lisansına sahip öğrenciler FIDE ratingli turnuvalara katılabilir. Genellikle 1000+ oyun kuvvetine ulaşan öğrencilerimizi yönlendiriyoruz.",
-  },
-  {
     q: "Online dersler yüz yüze kadar verimli mi?",
     a: "Belirli hedeflerde evet. Analiz, açılış çalışması ve bireysel dersler online formatta çok verimli. Ancak grup dinamiği ve turnuva pratiği için yüz yüze eğitim vazgeçilmezdir. Hibrit model öneriyoruz.",
-  },
-  {
-    q: "Turnuva harçlarını okul mu karşılıyor?",
-    a: "Kayıtlı öğrencilerimiz için Kırklareli ve Lüleburgaz içindeki turnuva harçları paket ücrete dahildir. Şehir dışı turnuvalarda yol ve konaklama velimize aittir; grup organizasyonlarında koordinasyonu okul yapar.",
   },
   {
     q: "Deneme dersi ücretli mi?",
@@ -217,12 +208,10 @@ export const NAV_LINKS = [
   { label: "İletişim", href: "/#iletisim" },
 ];
 
-// Progress chart data — Ege D. rating growth
+// Progress chart — Can D., 1000'den 1582'ye. Ara aylar verilmedi; çizgi iki ucu birleştirir.
 export const PROGRESS_DATA = [
-  { m: 0, r: 850 }, { m: 2, r: 920 }, { m: 4, r: 1010 }, { m: 6, r: 1060 },
-  { m: 8, r: 1140 }, { m: 10, r: 1180 }, { m: 12, r: 1240 }, { m: 14, r: 1320 },
-  { m: 16, r: 1380 }, { m: 18, r: 1420 }, { m: 20, r: 1490 }, { m: 22, r: 1550 },
-  { m: 24, r: 1620 },
+  { m: 0, r: 1000 },
+  { m: 24, r: 1582 },
 ];
 
 // Unicode chess pieces (for decorative use — actual board uses react-chessboard SVG pieces)

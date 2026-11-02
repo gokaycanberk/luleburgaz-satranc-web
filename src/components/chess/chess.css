@@ -21,8 +21,8 @@
 .bhy-board{position:relative;width:100%;aspect-ratio:1;touch-action:none;user-select:none;cursor:pointer;overflow:hidden}
 .bhy-grid{position:absolute;inset:0;display:grid;grid-template:repeat(8,1fr)/repeat(8,1fr)}
 .bhy-sq{position:relative}
-.bhy-sq.light{background:#eee5d2;--lbl:#3b322b}
-.bhy-sq.dark{background:#3b322b;--lbl:#eee5d2}
+.bhy-sq.light{background:#f4efe4;--lbl:#2c4a34}
+.bhy-sq.dark{background:#3f6b4e;--lbl:#f4efe4}
 .bhy-sq .rn,.bhy-sq .fl{
   position:absolute;font:500 clamp(10px,1.7vw,14px)/1 var(--font-dm-sans),system-ui,sans-serif;
   color:var(--lbl);opacity:.85;pointer-events:none;

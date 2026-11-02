@@ -7,7 +7,7 @@ export default function StatsBar() {
   const ref = useReveal<HTMLElement>();
   return (
     <section ref={ref} className="fade-in bg-ink text-paper">
-      <div className="container-lg grid grid-cols-2 lg:grid-cols-4">
+      <div className="container-lg grid grid-cols-1 sm:grid-cols-3">
         {STATS.map((s, i) => (
           <div
             key={i}

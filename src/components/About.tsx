@@ -20,23 +20,37 @@ export default function About() {
 
           <div>
             <p className="text-[22px] leading-[1.55] mb-8">
-              Lüleburgaz Satranç Spor Okulu, 2022 yılında bir avuç tutkulu antrenörün
-              &quot;Trakya&apos;da rekabetçi satranç eğitimi verecek bir çatı&quot; fikriyle
-              kuruldu. Bugün 250&apos;nin üzerinde öğrenciye ders veriyoruz; 127 lisanslı
-              sporcumuz var, 15&apos;i FIDE dereceli.
+              Lüleburgaz Satranç Spor Kulübü, 2022 yılında Trakya&apos;da rekabetçi satranç
+              eğitimine analitik ve vizyoner bir standart getirmek amacıyla, stratejik
+              düşünceyi merkeze alan bir kadro tarafından kuruldu. Bugün 150&apos;nin
+              üzerinde öğrencimize ders veriyor; 127 lisanslı sporcumuzla profesyonel
+              arenada boy gösteriyoruz.
             </p>
 
-            <p className="text-[20px] leading-[1.65] mb-6 text-ink-2">
-              Yaklaşımımız üç sütun üzerine kurulu:{" "}
-              <em className="font-serif italic text-[22px]">klasik açılış repertuvarı</em>,
-              hesaplama disiplini ve turnuva psikolojisi. Öğrencilerimiz Türkiye Satranç
-              Federasyonu takviminde her yıl 30&apos;un üzerinde resmi turnuvada mücadele
-              eder.
+            <p className="text-[20px] leading-[1.65] mb-4 text-ink-2">
+              Eğitim yaklaşımımız, mühendislik disipliniyle harmanlanmış geniş ve kapsamlı
+              bir metot yelpazesi üzerine kuruludur:
             </p>
+            <ul className="text-[20px] leading-[1.65] mb-6 text-ink-2 list-disc pl-5 space-y-2">
+              <li>
+                Klasik Açılış Repertuvarı ve Varyant Analizi (Sistematik altyapı ve oyun kurma)
+              </li>
+              <li>
+                Derinlemesine Hesaplama ve Pozisyonel Görüş Disiplini (Analitik karar alma süreçleri)
+              </li>
+              <li>
+                Oyun Sonu (Endgame) Ustalık Teknikleri ve Taktiksel Kalıplar (Derinleşme ve optimizasyon)
+              </li>
+              <li>
+                Turnuva Pratiği, Zaman Yönetimi ve Zihinsel Dayanıklılık (Stratejik odaklanma ve süreklilik)
+              </li>
+            </ul>
 
             <p className="text-[20px] leading-[1.65] mb-10 text-ink-2">
-              Kadromuzda üç antrenör var. Her öğrenci için bireysel gelişim planı
-              hazırlanır; ilerleyiş üç ayda bir raporlanır.
+              Öğrencilerimiz, ulusal ve yerel platformlarda geniş bir yelpazede aktif olarak
+              mücadele etmektedir. Uzman kadromuzla her öğrencimiz için kişiselleştirilmiş
+              bireysel gelişim planı hazırlıyor; atılan her adımı ve ilerleyişi yakından
+              takip ederek başarıyı şansa değil, sisteme bağlıyoruz.
             </p>
 
             <div className="pt-10 border-t border-line-soft">

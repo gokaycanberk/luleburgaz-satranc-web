@@ -138,7 +138,6 @@ export default function Tournaments() {
               Sahada <em className="italic font-serif">yaşananlar.</em>
             </>
           }
-          subtitle="Yaklaşan organizasyonlar ve geçmiş turnuva sonuçları — öğrencilerimizin katıldığı TSF puanlı müsabakalar burada."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6">

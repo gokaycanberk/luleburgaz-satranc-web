@@ -30,7 +30,7 @@ export default function Programs() {
           eyebrow="Programlar"
           title={
             <>
-              Altı program, <em className="italic font-serif">tek</em> yöntem.
+              Programlarımız.
             </>
           }
           subtitle="Öğrencinin yaşı, seviyesi ve hedefine göre tasarlanmış eğitim yapıları. Hepsi aynı akademik disipline dayanır."
