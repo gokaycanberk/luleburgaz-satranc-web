@@ -9,7 +9,7 @@
 - Telefon: 0 539 473 14 32 (+905394731432)
 - E-posta: merhaba@luleburgazsatranc.com
 - WhatsApp: https://wa.me/905394731432
-- Site: https://luleburgazsatranc.com
+- Site: https://luleburgazsatranc.vercel.app
 - Başlangıç yaşı: genellikle 5–6
 - Öğrenci: 150+ · Lisanslı sporcu: 127 · Antrenör: 3
 
@@ -34,15 +34,15 @@ Deneme dersi veya kayıt için:
 1. Telefon: +905394731432
 2. WhatsApp: https://wa.me/905394731432
 3. E-posta: merhaba@luleburgazsatranc.com
-4. Site iletişim bölümü: https://luleburgazsatranc.com/#iletisim
+4. Site iletişim bölümü: https://luleburgazsatranc.vercel.app/#iletisim
 
 ## Sayfalar
 
-- Ana sayfa: https://luleburgazsatranc.com/
-- Programlar: https://luleburgazsatranc.com/#programlar
-- Eğitmenler: https://luleburgazsatranc.com/#egitmenler
-- Turnuvalar: https://luleburgazsatranc.com/#turnuvalar
-- Blog: https://luleburgazsatranc.com/#blog
-- SSS: https://luleburgazsatranc.com/#sss
-- İletişim: https://luleburgazsatranc.com/#iletisim
-- Sitemap: https://luleburgazsatranc.com/sitemap.xml
+- Ana sayfa: https://luleburgazsatranc.vercel.app/
+- Programlar: https://luleburgazsatranc.vercel.app/#programlar
+- Eğitmenler: https://luleburgazsatranc.vercel.app/#egitmenler
+- Turnuvalar: https://luleburgazsatranc.vercel.app/#turnuvalar
+- Blog: https://luleburgazsatranc.vercel.app/#blog
+- SSS: https://luleburgazsatranc.vercel.app/#sss
+- İletişim: https://luleburgazsatranc.vercel.app/#iletisim
+- Sitemap: https://luleburgazsatranc.vercel.app/sitemap.xml
