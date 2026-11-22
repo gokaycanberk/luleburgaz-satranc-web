@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import { COACHES, type Coach } from "@/lib/data";
 import { SectionHead } from "./Primitives";
@@ -52,17 +53,28 @@ function CoachCard({ coach, idx }: { coach: Coach; idx: number }) {
           maxHeight: 360,
         }}
       >
-        <div
-          className="font-serif italic text-ink transition-transform duration-500 select-none"
-          style={{
-            fontSize: "clamp(64px, 12vw, 96px)",
-            opacity: 0.32,
-            transform: hover ? "scale(1.05)" : "scale(1)",
-          }}
-          aria-hidden
-        >
-          {initials}
-        </div>
+        {coach.photo ? (
+          <Image
+            src={coach.photo}
+            alt={coach.name}
+            fill
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            className="object-cover object-[center_18%] transition-transform duration-500"
+            style={{ transform: hover ? "scale(1.03)" : "scale(1)" }}
+          />
+        ) : (
+          <div
+            className="font-serif italic text-ink transition-transform duration-500 select-none"
+            style={{
+              fontSize: "clamp(64px, 12vw, 96px)",
+              opacity: 0.32,
+              transform: hover ? "scale(1.05)" : "scale(1)",
+            }}
+            aria-hidden
+          >
+            {initials}
+          </div>
+        )}
       </div>
 
       <div className="px-4 py-4 md:px-5 md:py-4 flex flex-col">
@@ -72,9 +84,7 @@ function CoachCard({ coach, idx }: { coach: Coach; idx: number }) {
         <div className="font-mono text-[10px] text-bordo tracking-[0.12em] uppercase mb-3">
           {coach.role}
         </div>
-        <p className="text-[13px] leading-[1.5] text-ink-2 mb-3">
-          {coach.bio}
-        </p>
+        <p className="text-[13px] leading-[1.5] text-ink-2 mb-3">{coach.bio}</p>
         <div className="font-mono text-[11px] text-ink-4 pt-3 border-t border-line-soft">
           {coach.years} yıl deneyim
         </div>

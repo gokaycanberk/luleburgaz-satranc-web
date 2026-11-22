@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
 import { PROGRAMS, type Program } from "@/lib/data";
 import { SectionHead } from "./Primitives";
 
@@ -28,11 +27,7 @@ export default function Programs() {
         <SectionHead
           num="02"
           eyebrow="Programlar"
-          title={
-            <>
-              Programlarımız.
-            </>
-          }
+          title={<>Programlarımız.</>}
           subtitle="Öğrencinin yaşı, seviyesi ve hedefine göre tasarlanmış eğitim yapıları. Hepsi aynı akademik disipline dayanır."
         />
 
@@ -58,16 +53,10 @@ function ProgramCard({
   media: ProgramMedia;
 }) {
   const { num, title, body, level } = program;
-  const [hover, setHover] = useState(false);
   const isPoster = media.mode === "contain";
 
   return (
-    <div
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
-      className="group flex flex-col min-w-0 border border-line-soft transition-colors cursor-pointer overflow-hidden"
-      style={{ background: hover ? "#EBE6D8" : "#F5F2EA" }}
-    >
+    <div className="group flex flex-col min-w-0 border border-line-soft overflow-hidden bg-paper hover:bg-paper-2 transition-colors">
       <div
         className={`relative w-full overflow-hidden border-b border-line-soft h-[190px] md:h-[210px] lg:h-[220px] ${
           isPoster ? "bg-paper-2" : "bg-paper-3"
@@ -80,12 +69,11 @@ function ProgramCard({
               alt=""
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-              className={`transition-transform duration-500 ${
+              className={`transition-transform duration-500 group-hover:scale-[1.03] ${
                 isPoster
                   ? "object-contain object-center"
                   : "object-cover object-[center_20%]"
               }`}
-              style={{ transform: hover ? "scale(1.03)" : "scale(1)" }}
             />
           </div>
         </div>
@@ -94,7 +82,7 @@ function ProgramCard({
         </div>
       </div>
 
-      <div className="flex flex-col px-5 pt-4 pb-4 md:px-5 md:pt-4 md:pb-5">
+      <div className="flex flex-col px-5 pt-4 pb-5 md:px-5 md:pt-4 md:pb-6">
         <div className="font-mono text-[10px] text-ink-4 tracking-[0.12em] uppercase mb-1.5">
           {level}
         </div>
@@ -103,22 +91,7 @@ function ProgramCard({
           {title}
         </h3>
 
-        <p className="text-sm leading-[1.55] text-ink-2 mb-4 line-clamp-3">
-          {body}
-        </p>
-
-        <div className="flex items-end justify-end pt-3 border-t border-line-soft">
-          <div
-            className="text-sm text-bordo transition-all duration-200 shrink-0"
-            style={{
-              opacity: hover ? 1 : 0.35,
-              transform: hover ? "translateX(0)" : "translateX(-4px)",
-            }}
-            aria-hidden
-          >
-            →
-          </div>
-        </div>
+        <p className="text-sm leading-[1.55] text-ink-2 line-clamp-3">{body}</p>
       </div>
     </div>
   );

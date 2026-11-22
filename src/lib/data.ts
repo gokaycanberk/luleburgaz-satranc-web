@@ -9,7 +9,7 @@ export const SCHOOL = {
   phone: "0 539 473 14 32",
   phoneTel: "+905394731432",
   whatsapp: "905394731432",
-  email: "merhaba@luleburgazsatranc.com",
+  email: "luleburgazsatrancsporkulubu@gmail.com",
 };
 
 export const STATS = [
@@ -69,6 +69,7 @@ export type Coach = {
   role: string;
   bio: string;
   years: number;
+  photo?: string;
 };
 
 export const COACHES: Coach[] = [
@@ -77,6 +78,7 @@ export const COACHES: Coach[] = [
     role: "Kurucu Başkan · Antrenör",
     bio: "Kulübün kurucu başkanı. Orta Doğu Teknik Üniversitesi Makina Mühendisliği mezunu. Yaklaşık 25 yıldır satranç eğitimi ve kulüp organizasyonuyla uğraşıyor.",
     years: 25,
+    photo: "/coaches/berkan.jpg",
   },
   {
     name: "Özgür Kantar",
@@ -89,6 +91,7 @@ export const COACHES: Coach[] = [
     role: "Antrenör",
     bio: "Yüksek kimya mühendisi. Yaklaşık 25 yıldır satrançla iç içe; Türkiye Kulüpler Satranç Şampiyonası’nda 16 yaş altı kızlar masasında Türkiye ikincisi, kadınlar masasında Türkiye beşincisi oldu. Üniversitelerarası Satranç Şampiyonası’nda bireysel altıncılık ve takımıyla dördüncülük elde etti. Kulüpte başlangıç seviyesinden turnuva hazırlığına kadar satranç eğitimi veriyor.",
     years: 25,
+    photo: "/coaches/berin.jpg",
   },
 ];
 

@@ -30,7 +30,8 @@
     z-index: 1;
   }
 
-  main, nav, footer {
+  /* nav is position:fixed in the component — do not force relative here */
+  main, footer {
     position: relative;
     z-index: 2;
   }
@@ -43,6 +44,43 @@
   :focus-visible {
     outline: 2px solid #7A1E1E;
     outline-offset: 3px;
+  }
+
+  /* Scrollbar: hide on mobile, keep thin/quiet on desktop.
+     Only paints the bar — overflow/layout/z-index unchanged. */
+  @media (max-width: 1023px) {
+    html {
+      scrollbar-width: none;
+    }
+    html::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+      display: none;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    html {
+      scrollbar-width: thin;
+      scrollbar-color: rgba(20, 19, 17, 0.22) transparent;
+    }
+    html::-webkit-scrollbar {
+      width: 8px;
+    }
+    html::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    html::-webkit-scrollbar-thumb {
+      background-color: rgba(20, 19, 17, 0.22);
+      border-radius: 999px;
+      border: 2px solid transparent;
+      background-clip: content-box;
+    }
+    html::-webkit-scrollbar-thumb:hover {
+      background-color: rgba(20, 19, 17, 0.38);
+      border: 2px solid transparent;
+      background-clip: content-box;
+    }
   }
 }
 

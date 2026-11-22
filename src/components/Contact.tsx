@@ -1,6 +1,7 @@
 import { SCHOOL } from "@/lib/data";
 import { Eyebrow } from "./Primitives";
 import BrandMark from "./BrandMark";
+import EmailLink from "./EmailLink";
 
 export default function Contact() {
   return (
@@ -30,9 +31,7 @@ export default function Contact() {
               >
                 WhatsApp
               </a>
-              <a href={`mailto:${SCHOOL.email}`} className="btn btn-ghost">
-                E-posta
-              </a>
+              <EmailLink className="btn btn-ghost">E-posta</EmailLink>
             </div>
           </div>
 
@@ -73,12 +72,10 @@ export default function Contact() {
               <div className="font-mono text-[10px] tracking-[0.14em] text-ink-4 mb-3">
                 E-POSTA
               </div>
-              <a
-                href={`mailto:${SCHOOL.email}`}
+              <EmailLink
+                showAddress
                 className="font-serif text-[22px] md:text-[26px] leading-[1.2] hover:text-bordo transition-colors inline-block break-all"
-              >
-                {SCHOOL.email}
-              </a>
+              />
             </div>
           </div>
         </div>

@@ -23,7 +23,6 @@ export default function JsonLd() {
       addressCountry: "TR",
     },
     telephone: SCHOOL.phoneTel,
-    email: SCHOOL.email,
     areaServed: SCHOOL.cities.map((city) => ({
       "@type": "City",
       name: city,

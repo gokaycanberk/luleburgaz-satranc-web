@@ -157,7 +157,7 @@ npm install resend
 `.env`:
 ```
 RESEND_API_KEY=re_xxx
-CONTACT_TO_EMAIL=merhaba@luleburgazsatranc.com
+CONTACT_TO_EMAIL=luleburgazsatrancsporkulubu@gmail.com
 ```
 
 `route.ts` içindeki Resend bloğunu yorumdan çıkarın.
@@ -241,4 +241,4 @@ Kullanılan üçüncü parti kütüphaneler:
 
 ---
 
-Sorular / issue'lar için: `merhaba@luleburgazsatranc.com`
+Sorular / issue'lar için: `luleburgazsatrancsporkulubu@gmail.com`
