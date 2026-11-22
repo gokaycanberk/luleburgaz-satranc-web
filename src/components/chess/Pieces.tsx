@@ -57,7 +57,9 @@ export default function PieceGlyph({ type }: { type: PieceSymbol }) {
   return (
     <svg viewBox="0 0 100 100" aria-hidden>
       <path d="M36 78L30 54Q30 44 50 44Q70 44 70 54L64 78Z" />
-      <path d="M46 10H54V18H62V26H54V37H46V26H38V18H46Z" />
+      <path d="M36 32L42 40H58L64 32L58 28H42Z" />
+      <path d="M46 22H54V32H46Z" />
+      <circle cx="50" cy="15" r="7" />
       <rect x="26" y="78" width="48" height="10" rx="3" />
       <path className="d" d="M38 62H62" />
     </svg>

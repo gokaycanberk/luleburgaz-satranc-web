@@ -21,7 +21,7 @@ export default function Testimonials() {
             Veli ve öğrenci sesleri
           </div>
           <h2 className="font-serif text-[40px] md:text-[56px] lg:text-[72px] leading-[1.02] mt-5 tracking-tighterish max-w-[900px]">
-            &quot;Sadece satranç <em className="italic font-serif text-gold-soft">değil,</em> bir düşünce disiplini.&quot;
+            &quot;Satranç düşünceyi disipline eden bir <em className="italic font-serif text-gold-soft">zihin sporudur.</em>&quot;
           </h2>
         </div>
 

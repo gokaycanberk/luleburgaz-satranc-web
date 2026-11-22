@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans, Instrument_Serif, JetBrains_Mono } from "next/font/google";
+import JsonLd from "@/components/JsonLd";
+import { SITE_NAME, SITE_NAME_ALT, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const instrumentSerif = Instrument_Serif({
@@ -30,33 +32,69 @@ const monoFont = JetBrains_Mono({
   adjustFontFallback: true,
 });
 
+const DESCRIPTION =
+  "Lüleburgaz ve Kırklareli'de satranç eğitimi. 5–6 yaştan itibaren bireysel, grup ve online dersler. Ücretsiz deneme dersi. 150+ öğrenci, 127 lisanslı sporcu.";
+
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ?? "https://luleburgazsatranc.com",
-  ),
-  title: "Lüleburgaz Satranç Spor Okulu — Zihinsel disiplin, stratejik düşünce",
-  description:
-    "Lüleburgaz Satranç Spor Okulu. Kırklareli ve Lüleburgaz'da 6–18 yaş çocuk ve gençlere bireysel, grup ve online satranç dersleri. FIDE ratingli turnuva hazırlığı.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: `${SITE_NAME} — Zihinsel disiplin, stratejik düşünce`,
+    template: `%s · ${SITE_NAME}`,
+  },
+  description: DESCRIPTION,
+  applicationName: SITE_NAME,
   keywords: [
     "Lüleburgaz satranç",
+    "Lüleburgaz satranç kursu",
     "Kırklareli satranç",
     "satranç okulu",
-    "satranç kursu",
+    "satranç kulübü",
     "çocuk satranç dersi",
-    "FIDE turnuva",
-    "TSF lisanslı",
+    "ücretsiz deneme dersi",
+    "online satranç dersi",
+    "turnuva hazırlığı",
+    SITE_NAME_ALT,
   ],
-  authors: [{ name: "Lüleburgaz Satranç Spor Okulu" }],
+  authors: [{ name: SITE_NAME }],
+  creator: SITE_NAME,
+  publisher: SITE_NAME_ALT,
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: "Lüleburgaz Satranç Spor Okulu",
-    description: "Zihinsel disiplin. Stratejik düşünce.",
+    title: SITE_NAME,
+    description: DESCRIPTION,
+    url: SITE_URL,
+    siteName: SITE_NAME,
     locale: "tr_TR",
     type: "website",
+    images: [
+      {
+        url: "/logo.jpeg",
+        width: 512,
+        height: 512,
+        alt: `${SITE_NAME} logo`,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: SITE_NAME,
+    description: DESCRIPTION,
+    images: ["/logo.jpeg"],
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
+  category: "sports",
 };
 
 export default function RootLayout({
@@ -69,7 +107,10 @@ export default function RootLayout({
       lang="tr"
       className={`${instrumentSerif.variable} ${sansFont.variable} ${monoFont.variable}`}
     >
-      <body className={`${sansFont.className} antialiased`}>{children}</body>
+      <body className={`${sansFont.className} antialiased`}>
+        <JsonLd />
+        {children}
+      </body>
     </html>
   );
 }

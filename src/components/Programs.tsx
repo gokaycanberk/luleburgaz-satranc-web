@@ -13,10 +13,10 @@ type ProgramMedia = {
 
 /** Atmospheric local covers for program cards (presentation only — data untouched). */
 const PROGRAM_IMAGES: ProgramMedia[] = [
-  { src: "/instagram/Cidw46WIfpV/cover.webp", mode: "contain" },
+  { src: "/program-bireysel.jpg", mode: "cover" },
   { src: "/instagram/C4nVMTCo4yr/cover.jpg", mode: "cover" },
   { src: "/instagram/Ctpg2t9oJlP/cover.webp", mode: "cover" },
-  { src: "/instagram/C7trRRKIlV1/cover.jpg", mode: "cover" },
+  { src: "/program-turnuva.jpg", mode: "cover" },
   { src: "/instagram/C8Esb6HICfq/cover.jpg", mode: "cover" },
   { src: "/instagram/DZZ8JPJlw8N/cover.jpg", mode: "cover" },
 ];

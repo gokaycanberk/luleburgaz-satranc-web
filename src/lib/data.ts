@@ -87,7 +87,7 @@ export const COACHES: Coach[] = [
   {
     name: "Berin Hacıoğlu",
     role: "Antrenör",
-    bio: "Lüleburgazlı kimya mühendisi. Yaklaşık 25 yıldır satrançla iç içe; derslerde temelden turnuva hazırlığına kadar öğrencilerle birebir ilgileniyor.",
+    bio: "Yüksek kimya mühendisi. Yaklaşık 25 yıldır satrançla iç içe; Türkiye Kulüpler Satranç Şampiyonası’nda 16 yaş altı kızlar masasında Türkiye ikincisi, kadınlar masasında Türkiye beşincisi oldu. Üniversitelerarası Satranç Şampiyonası’nda bireysel altıncılık ve takımıyla dördüncülük elde etti. Kulüpte başlangıç seviyesinden turnuva hazırlığına kadar satranç eğitimi veriyor.",
     years: 25,
   },
 ];

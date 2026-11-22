@@ -8,9 +8,7 @@ import {
   getTournamentContent,
   getTournamentContentBySlug,
 } from "@/lib/content";
-
-const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://luleburgazsatranc.com";
+import { SITE_URL } from "@/lib/site";
 
 type PageProps = {
   params: { slug: string };
